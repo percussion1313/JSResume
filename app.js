@@ -3,11 +3,11 @@ var fullName = 'peter grant'
 
 console.log('Name: ' + fullName.toUpperCase())
 //Career *pending*
-var career = ['Web Developer', 'Musician']
+var career = ['Web Developer/Software Engineer', 'Musician']
 
 console.log('Career: ' + career[0] + ' / ' + career[1])
 
-var description = 'I am a pretty chill guy who loves drumming and partying'
+var description = 'I am a pretty chill guy who likes drumming and partying'
 
 console.log('Description: ' + description)
 
@@ -15,10 +15,10 @@ console.log(' ')
 
 console.log('My Interests: ')
 
-var interests = ['Handstands', 'Percussion', 'Remembering people in Shows/Movies']
+var interests = ['Handstands', 'Percussion', 'Drinking Craft Beer']
 
 for (i = 0; i < interests.length; i++) {
-    console.log('*' + interests[i])
+    console.log('* ' + interests[i])
 }
 
 console.log(' ')
@@ -50,12 +50,35 @@ var exp = [
 
 function myExp() {
 
-        for (e = 0; e < exp.length; e++) {
-            console.log('*' + exp[e].location + ': ' + exp[e].role + ' - ' + exp[e].desc)
-        }
+    for (e = 0; e < exp.length; e++) {
+        console.log('* ' + exp[e].location + ': ' + exp[e].role + ' - ' + exp[e].desc)
     }
+}
 
 console.log(myExp())
 
 console.log(' ')
+
+console.log('My Skills:')
+
+var skills = ['Percussion', 'Handstands', 'Juggling Only 3 Items', 'CSS', 'HTML', 'Javascript']
+
+function displaySkill(BAM, skills) {
+        if (BAM == 1) {
+            console.log('* ' + 'BAM ' + skills)
+            return(skills);
+        }
+        else {
+            console.log('* ' + skills)
+            return(skills);
+        }    
+    }
+
+displaySkill(1,'Percussion')
+displaySkill(1,'Handstands')
+displaySkill(0,'Juggling Only 3 Items :(')
+displaySkill(1,'CSS')
+displaySkill(1,'HTML')
+displaySkill(1,'Javascript')
+
 
